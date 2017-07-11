@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28EA509D-F935-456C-80ED-3C2D75896671}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Itcast视频WinForm</RootNamespace>
+    <AssemblyName>Itcast视频WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UControlButtonExt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControlButtonExt.Designer.cs">
+      <DependentUpon>UControlButtonExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="使用带参数的SQL语句向数据库中插入空值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="使用带参数的SQL语句向数据库中插入空值.Designer.cs">
+      <DependentUpon>使用带参数的SQL语句向数据库中插入空值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="多条件查询-使用带参数的SQL语句.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="多条件查询-使用带参数的SQL语句.Designer.cs">
+      <DependentUpon>多条件查询-使用带参数的SQL语句.cs</DependentUpon>
+    </Compile>
+    <Compile Include="将内连接的数据绑定到DataGridView上.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="将内连接的数据绑定到DataGridView上.Designer.cs">
+      <DependentUpon>将内连接的数据绑定到DataGridView上.cs</DependentUpon>
+    </Compile>
+    <Compile Include="省市数据递归加载到TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="省市数据递归加载到TreeView.Designer.cs">
+      <DependentUpon>省市数据递归加载到TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="省市联动.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="省市联动.Designer.cs">
+      <DependentUpon>省市联动.cs</DependentUpon>
+    </Compile>
+    <Compile Include="练习SQLAdapterTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="练习SQLAdapterTest.Designer.cs">
+      <DependentUpon>练习SQLAdapterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="资源管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="资源管理.Designer.cs">
+      <DependentUpon>资源管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通过ADO.net调用存储过程.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通过ADO.net调用存储过程.Designer.cs">
+      <DependentUpon>通过ADO.net调用存储过程.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UControlButtonExt.resx">
+      <DependentUpon>UControlButtonExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="使用带参数的SQL语句向数据库中插入空值.resx">
+      <DependentUpon>使用带参数的SQL语句向数据库中插入空值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="多条件查询-使用带参数的SQL语句.resx">
+      <DependentUpon>多条件查询-使用带参数的SQL语句.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="将内连接的数据绑定到DataGridView上.resx">
+      <DependentUpon>将内连接的数据绑定到DataGridView上.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="省市数据递归加载到TreeView.resx">
+      <DependentUpon>省市数据递归加载到TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="省市联动.resx">
+      <DependentUpon>省市联动.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="练习SQLAdapterTest.resx">
+      <DependentUpon>练习SQLAdapterTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="资源管理.resx">
+      <DependentUpon>资源管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通过ADO.net调用存储过程.resx">
+      <DependentUpon>通过ADO.net调用存储过程.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{1147fa1c-b304-42c5-9a7e-d56282e187fe}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
